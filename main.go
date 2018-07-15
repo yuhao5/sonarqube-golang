@@ -17,7 +17,7 @@ func main() {
 	fmt.Printf("mathMap: %+v\n", mathMap)
 	var nilM *math.Math
 	fmt.Println(nilM.GetA())
-	fmt.Println(nilM.GetB)
+	fmt.Println(nilM.GetB())
 
 	var mathList []*math.Math
 	for i := 0; i < 10; i++ {

@@ -1,0 +1,5 @@
+main.go:9:1:warning: Test is unused (deadcode)
+main.go:16::warning: Errors unhandled.,LOW,HIGH (gas)
+main.go:9:5:warning: exported var Test should have comment or be unexported (golint)
+main.go:20::error: Println arg nilM.GetB is a func value, not called (vet)
+main.go:9:5:warning: var Test is unused (U1000) (megacheck)
