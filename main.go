@@ -13,6 +13,7 @@ func main() {
 	fmt.Printf("math divide result: %+v\n", m.Divide())
 	mathMap, _ := m.ToMap()
 	fmt.Printf("mathMap: %+v\n", mathMap)
-
-	fmt.Println(1 / 0)
+	var nilM *math.Math
+	fmt.Println(nilM.GetA())
+	fmt.Println(nilM.GetB)
 }
