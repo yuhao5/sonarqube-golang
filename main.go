@@ -32,4 +32,10 @@ func main() {
 	for _, m := range mathList {
 		fmt.Println(m.Divide())
 	}
+
+	if 1 == 1 {
+		if 2 == 2 {
+			fmt.Println("ok")
+		}
+	}
 }
