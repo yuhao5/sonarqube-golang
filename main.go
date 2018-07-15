@@ -6,6 +6,8 @@ import (
 	"gitlab.kenny.com/demo/math"
 )
 
+var Test int
+
 func main() {
 	m := new(math.Math)
 	m.A = 1
