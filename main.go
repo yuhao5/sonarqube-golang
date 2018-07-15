@@ -18,4 +18,18 @@ func main() {
 	var nilM *math.Math
 	fmt.Println(nilM.GetA())
 	fmt.Println(nilM.GetB)
+
+	var mathList []*math.Math
+	for i := 0; i < 10; i++ {
+		mathList = append(mathList, new(math.Math))
+	}
+
+	for i, m := range mathList {
+		m.A = i
+		m.B = i*2 + 1
+	}
+
+	for _, m := range mathList {
+		fmt.Println(m.Divide())
+	}
 }
