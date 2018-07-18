@@ -11,12 +11,34 @@ type Math struct {
 	B int
 }
 
+func New(a, b int) *Math {
+	return &Math{
+		A: a,
+		B: b,
+	}
+}
+
 func (m *Math) Divide() int {
+	// FIXME: fix divide by zero panic
 	return m.A / m.B
+}
+
+func (m *Math) Mulitpart() int {
+	// TODO: implement mulitpart
+	var result int
+	return result
+}
+
+func (m *Math) SetA(a int) {
+	m.A = a
 }
 
 func (m *Math) GetA() int {
 	return m.A
+}
+
+func (m *Math) SetB(b int) {
+	b = b
 }
 
 func (m *Math) GetB() int {
